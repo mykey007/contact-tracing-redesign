@@ -38,6 +38,7 @@
 
       <section class="text-gray-700 body-font">
         <div class="container px-5 py-12 mx-auto">
+          <h1 class="flex items-center mb-4">My Case Load</h1>
           <div class="flex flex-row text-center w-full mb-20">
             <table class="table-auto">
               <thead>
@@ -133,7 +134,22 @@
                   <td class="px-4 py-2">07/07/2020</td>
                 </tr>
                 <tfoot>
-                  <tr class="border"><td class="px-4 py-2 text-left" colspan="7">* Contacts and Animal Reports not listed</td></tr></tfoot>
+                  <tr class="border">
+                    <td class="px-4 py-2 text-left text-gray-500 text-xs" colspan="5">* Contacts and Animal Reports not listed</td>
+                    <td class="px-4 py-2">
+                      <a class="" href="#">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="prev mb-1 inline-block w-4 h-4 ml-auto text-base" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                          <span >Prev</span>
+                      </a>
+                    </td>
+                    <td class="px-4 py-2">
+                      <a class="" href="#">
+                        Next
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="next mb-1 inline-block w-4 h-4 ml-auto" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                      </a>
+                    </td>
+                  </tr>
+                </tfoot>
               </tbody>
               
             </table>
@@ -151,7 +167,7 @@
                   <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="username">
                     View Begin Date: 
                   </label>
-                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="08 Jul 2020">
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="07/08/2020">
               </div>
               <div class="mb-6">
                   <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="password">
@@ -186,9 +202,7 @@
                   
               </div>
               </form>
-              <p class="text-center text-gray-500 text-xs">
-              &copy;2020 Acme Corp. All rights reserved.
-              </p>
+              <!-- <p class="text-center text-gray-500 text-xs">&copy;2020 Acme Corp. All rights reserved.</p> -->
           </div>
 
 

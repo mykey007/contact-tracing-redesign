@@ -26,6 +26,17 @@ a:hover {
     color: #2b6cb0;
 }
 
+h1 {
+    line-height: 1;
+    --text-opacity: 1;
+    color: #1a202c;
+    color: rgba(74,85,104,var(--text-opacity));
+    font-weight: 500;
+    font-size: 1.875rem;
+    letter-spacing: -.025em;
+}
+
+
 .border-l {
     border-left: 1px solid #e2e8f0;
     border-top: none;
@@ -34,4 +45,8 @@ a:hover {
 
 .border-r {
     border-right: 1px solid #e2e8f0;
+}
+
+svg.prev  {
+    transform: rotate(180deg);
 }
