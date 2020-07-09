@@ -50,3 +50,10 @@ h1 {
 svg.prev  {
     transform: rotate(180deg);
 }
+
+tr {
+    background: #fff;
+}
+tr:hover td{
+    background: rgba(247,250,252,1)
+}
