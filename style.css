@@ -1,0 +1,29 @@
+body {
+    background-color: #fff;
+}
+
+header .container {
+    background-color: #d9edff;
+}
+
+.align-center {
+    align-items: center;
+}
+
+a {
+    color: #095ba7;
+}
+
+a:hover {
+    color: #222;
+}
+
+.border-l {
+    border-left: 1px solid #e2e8f0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.border-r {
+    border-right: 1px solid #e2e8f0;
+}

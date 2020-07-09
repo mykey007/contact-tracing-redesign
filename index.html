@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='style.css' />
+    <script src="index.js"></script>
+    <title>My Case Load - WebCMR</title>
+</head>
+<body>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <p class="ml-3 text-xl block">WebCMR</p>
+            <!-- <p class="text-sm">County of San Diego</p> -->
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="#" class="mr-5 hover:text-gray-900">My Case Load</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Search</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Previous Search</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Region Review</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Outbreak</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Administration</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Dictionaries</a>
+            <!-- <a class="mr-5 hover:text-gray-900">Help</a> -->
+          </nav>
+          <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Help
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-row text-center w-full mb-20">
+            <table class="table-auto">
+              <thead>
+                <tr class="border">
+                  <th class="px-4 py-2">ID</th>
+                  <th class="px-4 py-2">Type</th>
+                  <th class="px-4 py-2">Name</th>
+                  <th class="px-4 py-2">Disease</th>
+                  <th class="px-4 py-2">Status</th>
+                  <th class="px-4 py-2">Date Created</th>
+                  <th class="px-4 py-2">Date of Onset</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-l border-r">
+                  <td class="px-4 py-2"><a href="#">1234567</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Big Bird</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">OPEN</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="bg-gray-100 border">
+                  <td class="px-4 py-2"><a href="#">7654321</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Oscar the Grouch</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">QA Review</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                <tr class="border">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Grover</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">OPEN</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="bg-gray-100">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Grover</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">Under Investigation</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="border">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Grover</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">Under Investigation</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="border bg-gray-100">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Grover</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">Under Investigation</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="border">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Elmo</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">Under Investigation</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="border bg-gray-100">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Ernie</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">Under Investigation</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tr class="border">
+                  <td class="px-4 py-2"><a href="#">9876543</a></td>
+                  <td class="px-4 py-2">CI</td>
+                  <td class="px-4 py-2">Bert</td>
+                  <td class="px-4 py-2">NOVEL CORONAVIRUS 2019</td>
+                  <td class="px-4 py-2">QA Review</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                  <td class="px-4 py-2">07/07/2020</td>
+                </tr>
+                <tfoot>
+                  <tr class="border"><td class="px-4 py-2 text-left" colspan="7">* Contacts and Animal Reports not listed</td></tr></tfoot>
+              </tbody>
+              
+            </table>
+
+
+
+            <div class="w-full max-w-xs ml-6">
+              <div class="text-left block text-gray-700 text-sm font-bold mb-6">
+                <p>Logged in as: <a href="#">Mallowe, Michael</a> </p>
+                <p>Domain: Main</p>
+              </div>
+              <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div class="mb-4">
+                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="username">
+                    View Begin Date: 
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="08 Jul 2020">
+              </div>
+              <div class="mb-6">
+                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="password">
+                    Status:
+                  </label>
+                    <div class="relative">
+                      <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                        <option>Clearance Testing</option>
+                        <option>Closed</option>
+                        <option>Open</option>
+                        <option>QA Review</option>
+                        <option>Ready to Close</option>
+                        <option>Under Investigation</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                </div>
+                <div class="text-left mb-6">
+                  <input type="radio" id="name" name="gender" value="Name/OB#/GE#">
+                  <label for="male">Name/OB#/GE#</label><br>
+                  <input type="radio" id="disease" name="gender" value="disease">
+                  <label for="female">Disease/GE Type</label><br>
+                  <input type="radio" id="task" name="gender" value="task">
+                  <label for="other">Task Name</label>
+                </div>
+              <div class="flex items-center justify-between">
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                  Search
+                  </button>
+                  
+              </div>
+              </form>
+              <p class="text-center text-gray-500 text-xs">
+              &copy;2020 Acme Corp. All rights reserved.
+              </p>
+          </div>
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>

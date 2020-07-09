@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='style.css' />
+    <script src="index.js"></script>
+    <title>Sign In - WebCMR</title>
+</head>
+<body>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">WebCMR</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="#" class="mr-5 hover:text-gray-900">My Case Load</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Search</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Previous Search</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Region Review</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Outbreak</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Administration</a>
+            <a href="#" class="mr-5 hover:text-gray-900">Dictionaries</a>
+            <!-- <a class="mr-5 hover:text-gray-900">Help</a> -->
+          </nav>
+          <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Help
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20 align-center">
+            <div class="w-full max-w-xs">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    Username
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                    Password
+                    </label>
+                    <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+                    <p class="text-red-500 text-xs italic">Please choose a password.</p>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    Sign In
+                    </button>
+                    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                    Forgot Password?
+                    </a>
+                </div>
+                </form>
+                <p class="text-left mb-2 text-gray-500 text-xs">
+                    The use of this County application/system, known as WebCMR, is restricted to authorized users only. WebCMR and equipment are subject to monitoring to ensure proper performance of applicable security features or procedures. Such monitoring may result in the acquisition, recording, and analysis of all data being communicated, transmitted, processed, or stored in WebCMR, including but not limited to information stored locally on the hard drive by a user. There is no right of privacy in WebCMR. If monitoring reveals possible evidence of criminal activity, such evidence may be provided to law enforcement personnel and other personnel in conjunction with a report of improper or unauthorized use.
+                </p>
+                    <p class="text-left mb-2 text-gray-500 text-xs">(Any user who extracts information from WebCMR on to media such as, but not limited to, a Floppy Disk, CD, DVD, or Flash Drive, becomes solely responsible for the safekeeping of that information.)
+                    </p>
+                    <p class="text-left mb-2 text-gray-500 text-xs">ANYONE USING WebCMR EXPRESSLY CONSENTS TO SUCH MONITORING FOR NETWORK ADMINISTRATION AND SECURITY PURPOSES.
+                    </p>
+                    
+                    
+                    
+                    <p class="text-left mb-2 text-gray-500 text-xs">Copyright © 1998-2020 Atlas Development Corporation. All rights reserved, licensed to County of San Diego. Developed and maintained by Atlas Public Health, a division of Atlas Development Corporation. 
+                </p>
+            </div>
+          </div>
+      </div>
+  </section>
+</body>
+</html>
