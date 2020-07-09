@@ -61,3 +61,7 @@ tr:hover td{
 tr.no-hover td{
     background: #fff;
 }
+
+table {
+    max-width: 900px
+}
