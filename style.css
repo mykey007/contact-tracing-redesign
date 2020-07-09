@@ -30,7 +30,7 @@ h1 {
     line-height: 1;
     --text-opacity: 1;
     color: #1a202c;
-    color: rgba(74,85,104,var(--text-opacity));
+    color: rgba(74,85,104,1);
     font-weight: 500;
     font-size: 1.875rem;
     letter-spacing: -.025em;
