@@ -55,5 +55,9 @@ tr {
     background: #fff;
 }
 tr:hover td{
-    background: rgba(247,250,252,1)
+    background: rgb(237,242,247)
+}
+
+tr.no-hover td{
+    background: #fff;
 }
