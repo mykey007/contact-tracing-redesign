@@ -3,19 +3,27 @@ body {
 }
 
 header .container {
-    background-color: #d9edff;
+    /* background-color: #4298df; */
 }
 
 .align-center {
     align-items: center;
 }
 
-a {
-    color: #095ba7;
+.white {
+    color: #fff
+}
+
+header a {
+    color: #fff;
+}
+
+section a {
+    color: #4298df
 }
 
 a:hover {
-    color: #222;
+    color: #2b6cb0;
 }
 
 .border-l {
