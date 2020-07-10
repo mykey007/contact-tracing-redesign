@@ -1,32 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a:focus,
-input:focus,
-button:focus {
-  outline: 2px solid #BDC3C7;
-}
-body {
-  font-family: 'Open Sans', Sans-serif;
-  font-size: 13px;
-  background-color: #fff;
-  padding: 0;
-  margin: 0;
-}
-pre {
-  font-family: Consolas, "Courier New", Courier, monospace;
-  font-size: 11px;
-}
-.container {
-  width: 100%;
-  padding: 25px 25px 0 25px;
-}
-.container > :last-child {
-  padding-bottom: 25px;
-}
 .container-half {
   width: 50%;
   padding: 0 10px;
@@ -56,14 +27,9 @@ pre {
   background-color: #fff;
   color: #b9c5c8;
   margin: 0 0 1px 0;
-  padding: 9px 15px;
   cursor: pointer;
   min-width: 100%;
   min-height: 40px;
-  border-width: 1px 1px 0 1px;
-  border-style: solid;
-  border-color: #d9e5e8;
-  font-size: 13px;
   font-weight: bold;
   -webkit-transition: all 0.15s ease-in;
      -moz-transition: all 0.15s ease-in;
@@ -72,7 +38,6 @@ pre {
 }
 .ui-tabgroup > .ui-tabs > [class^="ui-tab"] > .fa {
   padding-right: 10px;
-  font-size: 15px;
 }
 .ui-tabgroup > input[class^="ui-tab"] {
   -webkit-appearance: none;
@@ -117,9 +82,6 @@ pre {
 .ui-tabgroup > .ui-panels > [class^="ui-tab"] {
   background-color: #fff;
   color: #4a6e78;
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: #d9e5e8;
   min-height: 200px;
   padding: 25px;
   display: none;
@@ -131,9 +93,6 @@ pre {
   hyphens: auto;
   float: left;
   width: 100%;
-}
-.ui-tabgroup.left-side > .ui-panels > [class^="ui-tab"] {
-  border-width: 1px;
 }
 .ui-tabgroup > .ui-panels > [class^="ui-tab"]:after {
   visibility: hidden;
@@ -175,11 +134,11 @@ pre {
 
 @media screen and (min-width: 639px) {
   .ui-tabgroup.left-side > .ui-tabs {
-    width: 140px;
+    width: 12rem;
     float: left;
   }
   .ui-tabgroup.left-side > .ui-panels {
-    margin-left: 140px;
+    margin-left: 12rem;
   }
   .ui-tabgroup.left-side.icons-only > .ui-tabs {
     width: 50px;
@@ -192,11 +151,7 @@ pre {
     float: left;
     width: 100%;
   }
-  .ui-tabgroup > .ui-tabs > [class^="ui-tab"]:first-child {
-    margin: 1px 0 0 5px;
-  }
   .ui-tabgroup > .ui-tabs > [class^="ui-tab"] {
-    margin: 1px 0 0 1px;
     min-width: 50px;
   }
   .ui-tabgroup > input.ui-tab1:checked ~ .ui-tabs > .ui-tab1:after,
@@ -229,7 +184,7 @@ pre {
     content: '';
     background-color: #fff;
     top: 0;
-    left: 138px;
+    /* left: 138px; */
     height: 100%;
     width: 3px;
   }
@@ -237,8 +192,6 @@ pre {
     margin: 5px 0 0 0;
   }
   .ui-tabgroup.left-side > .ui-tabs > [class^="ui-tab"] {
-    border-width: 1px 0 1px 1px;
-    margin: 1px 0 0 0;
     width: 100%;
   }
 }
