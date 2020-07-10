@@ -40,7 +40,7 @@
         <section class="text-gray-700 body-font">
             <div class="container px-5 py-6 mx-auto">
               <h1 class="flex items-center mb-8 mt-4">Contact Investigation</h1>
-              <div class="flex flex-wrap -m-4 text-left w-full mb-4">
+              <div class="flex flex-wrap -m-4 text-left w-full mb-4 contact-card-actions">
                 <div class="max-w-sm w-full lg:max-w-full lg:flex">
                     <div class="border-r border-gray-400  lg:border-gray-400 bg-white  lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <p class="text-sm text-gray-600 flex items-center">
@@ -76,11 +76,11 @@
                     </button>
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="help-outline" class="mr-4"></ion-icon>
-                        Question Mark
+                        Help
                     </button>
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="person-outline" class="mr-4"></ion-icon>
-                        Person
+                        Person Record
                     </button>
                 </div>
                 <div class="flex flex-col ml-2 p-4">
@@ -104,25 +104,25 @@
                 <div class="flex flex-col ml-2 p-4">
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="medkit-outline" class="mr-4"></ion-icon>
-                        Disease Incident
+                        Disease History
                     </button>
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="camera-reverse-outline" class="mr-4"></ion-icon>
-                        Version
+                        Version History
                     </button>
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="compass-outline" class="mr-4"></ion-icon>
-                        Location
+                        Region Transfer
                     </button>
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="flag-outline" class="mr-4"></ion-icon>
-                        Yellow & Green Flag
+                        Process Status
                     </button>
                 </div>
                 <div class="flex flex-col ml-2 p-4">
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="ribbon-outline" class="mr-4"></ion-icon>
-                        Checkered Flag
+                        Resolution Status
                     </button>
                 </div>
             </div>
@@ -150,8 +150,8 @@
                             <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                               First Name
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
-                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+                            <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                           </div>
                           <div class="w-full md:w-1/4 px-3">
                             <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -200,6 +200,7 @@
                             </label>
                             <div class="relative">
                               <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                <option>Select One</option>
                                 <option>California</option>
                                 <option>Arizona</option>
                                 <option>Texas</option>
@@ -259,6 +260,7 @@
                                 </label>
                                 <div class="relative">
                                   <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <option>Select One</option>
                                     <option>English</option>
                                     <option>Spanish</option>
                                     <option>Chinese</option>
@@ -274,6 +276,7 @@
                               </label>
                               <div class="relative">
                                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                  <option>Select One</option>
                                   <option>Hispanic/Latino</option>
                                   <option>Not Hispanic/Latino</option>
                                   <option>Unknown</option>
@@ -289,6 +292,7 @@
                               </label>
                               <div class="relative">
                                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                  <option>Select One</option>
                                   <option>Black or African American</option>
                                   <option>Asian American </option>
                                   <option>White </option>
@@ -313,6 +317,7 @@
                                 </label>
                                 <div class="relative">
                                   <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <option>Select One</option>
                                     <option>Male</option>
                                     <option>Female</option>
                                     <option>Trans M to F</option>
@@ -331,6 +336,7 @@
                               </label>
                               <div class="relative">
                                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                  <option>Select One</option>
                                   <option>Yes</option>
                                   <option>No</option>
                                   <option>Unknown</option>

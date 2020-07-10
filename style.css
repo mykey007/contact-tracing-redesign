@@ -65,3 +65,10 @@ tr.no-hover td{
 table {
     max-width: 900px
 }
+
+
+.contact-card-actions button {
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+}
