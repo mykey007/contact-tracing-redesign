@@ -72,3 +72,15 @@ table {
     border: 1px solid #d9d9d9;
     padding: 10px;
 }
+
+form input[type="radio"] {
+    width: 20px;
+    height:20px;
+}
+
+.radio-label {
+    line-height: 2;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}

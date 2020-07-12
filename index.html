@@ -187,19 +187,33 @@
                 </tr>
                 <tfoot>
                   <tr class="no-hover">
-                    <td class="px-4 py-2 text-left text-gray-500 text-xs" colspan="4">* Contacts and Animal Reports not listed</td>
-                    <td class="px-4 py-2 text-right">
+                    <td class="px-4 py-2 text-left text-gray-500 text-xs" colspan="3">* Contacts and Animal Reports not listed</td>
+                    <td class="px-4 py-2 text-right" colspan="3">
                       <a class="text-gray-500" href="#">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="prev mb-1 inline-block w-4 h-4 ml-auto text-base" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
                           <span >Prev</span>
                       </a>
+                      &nbsp;
+                      <span class="text-gray-500 ">&nbsp; 1 &nbsp;</span>
+                      <a class="" href="#">
+                         2 &nbsp; 3  &nbsp; 4 &nbsp; 5
+                        
+                      </a>
+                      &nbsp;
+                      <a class="" href="#">
+                        Next
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="next mb-1 inline-block w-4 h-4 ml-auto" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                      </a>
+                    </td>
+                    <!-- <td class="px-4 py-2 text-right">
+                      
                     </td>
                     <td class="px-4 py-2 text-right">
                       <a class="" href="#">
                         Next
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="next mb-1 inline-block w-4 h-4 ml-auto" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
                       </a>
-                    </td>
+                    </td> -->
                   </tr>
                 </tfoot>
               </tbody>
@@ -244,11 +258,11 @@
                 </div>
                 <div class="text-left mb-6">
                   <input type="radio" id="name" name="gender" value="Name/OB#/GE#">
-                  <label for="name">Name/OB#/GE#</label><br>
+                  <label for="name" class="radio-label">Name/OB#/GE#</label><br>
                   <input type="radio" id="disease" name="gender" value="disease">
-                  <label for="disease">Disease/GE Type</label><br>
+                  <label for="disease" class="radio-label">Disease/GE Type</label><br>
                   <input type="radio" id="task" name="gender" value="task">
-                  <label for="task">Task Name</label>
+                  <label for="task" class="radio-label">Task Name</label>
                 </div>
               <div class="flex items-center justify-between">
                   <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">

@@ -78,7 +78,7 @@
                         <ion-icon name="help-outline" class="mr-4"></ion-icon>
                         Help
                     </button>
-                    <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
+                    <button class="inline-flex mb-0 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="person-outline" class="mr-4"></ion-icon>
                         Person Record
                     </button>
@@ -96,7 +96,7 @@
                         <ion-icon name="search-outline" class="mr-4"></ion-icon>
                         Search
                     </button>
-                    <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
+                    <button class="inline-flex mb-0 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="mail-outline" class="mr-4"></ion-icon>
                         Email
                     </button>
@@ -114,7 +114,7 @@
                         <ion-icon name="compass-outline" class="mr-4"></ion-icon>
                         Region Transfer
                     </button>
-                    <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
+                    <button class="inline-flex mb-0 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="flag-outline" class="mr-4"></ion-icon>
                         Process Status
                     </button>
@@ -144,6 +144,7 @@
                 </div>
                 <div class="ui-panels p-4 pt-2">
                   <div class="ui-tab1">
+                    <h2 class="mb-6">Personal Information</h2>
                     <form class="w-full max-w-xxl">
                         <div class="flex flex-wrap -mx-3 mb-6">
                           <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
@@ -219,7 +220,7 @@
                         </div>
                       </form>
 
-                      <hr class="my-6" />
+                      <hr class="my-8" />
 
                       <form class="w-full max-w-xxl">
                         <div class="flex flex-wrap -mx-3 mb-6">
@@ -250,7 +251,7 @@
                         </div>
                     </form>
 
-                    <hr class="my-6" />
+                    <hr class="my-8" />
 
                     <form class="w-full max-w-xxl">
                         <div class="flex flex-wrap -mx-3 mb-2">
@@ -307,7 +308,7 @@
                     </form>
 
 
-                    <hr class="my-6" />
+                    <hr class="my-8" />
 
                     <form class="w-full max-w-xxl">
                         <div class="flex flex-wrap -mx-3 mb-2">
@@ -361,8 +362,44 @@
 
                   </div>
                   <div class="ui-tab2">
-                    <h3>Duis aute</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, <a href="#">a link</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2 class="mb-6">Attempts to Reach Contact</h2>
+                    <form class="w-full max-w-xxl">
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                          <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                            <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                Call/ email/ text date
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="(760)123-4567">
+                          </div>
+                          <div class="w-full md:w-full px-3">
+                            <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                              Call Time
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="(619)921-2101">
+                          </div>
+                          <div class="w-full md:w-full px-3">
+                            <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                              Call Outcome
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="(123)456-7890">
+                          </div>
+                          <div class="w-full md:w-full px-3">
+                            <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                                If other outcome of call/ email/ text, specify
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="any relevant info">
+                          </div>
+                          <div class="w-full md:w-full px-3">
+                            <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                                Investigator
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Ernie Ball">
+                          </div>
+                        </div>
+                    </form>
+
+                    <hr class="my-8" />
+
                   </div>
                   <div class="ui-tab3">
                     <h3>Not much here</h3>
