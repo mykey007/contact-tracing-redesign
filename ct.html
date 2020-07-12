@@ -142,7 +142,7 @@
                   <label class="ui-tab4 text-xl p-4 pl-1 pb-2 pt-2" for="tgroup_c2_tab4"></i>4. Follow Up</label>
                   <label class="ui-tab5 text-xl p-4 pl-1 pb-2 pt-2" for="tgroup_c2_tab45"></i>5. Investigation</label>
                 </div>
-                <div class="ui-panels p-4 pt-2">
+                <div class="ui-panels pt-2">
                   <div class="ui-tab1">
                     <h2 class="mb-6">Personal Information</h2>
                     <form class="w-full max-w-xxl">
@@ -407,35 +407,140 @@
                   </div>
                   <div class="ui-tab4">
                     <h2 class="mb-6">Symptoms</h2>
-                    <div class="flex flex-row">
-                    <div class="flex flex-col ml-2 p-4 border py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">
-                      <h3 class="font-extrabold mb-2">Fever</h3>
-                      <div class="text-left mb-6">
-                        <input type="radio" id="yes" name="gender" value="yes">
-                        <label for="yes" class="radio-label">Yes</label><br>
-                        <input type="radio" id="no" name="gender" value="no">
-                        <label for="no" class="radio-label">No</label><br>
-                        <input type="radio" id="unknown" name="gender" value="unknown">
-                        <label for="unknown" class="radio-label">Unknown</label>
-                        <div style="display: block;">
-                          <label for="highest-temp" class="radio-label">Highest Temperature (F/C)</label>
-                          <br/>
-                          <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="100.4f" />
+                    <div class="flex flex-row flex-wrap justify-between">
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Fever</h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Highest Temperature (F/C)</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="100.4f" />
+                          </div>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="flex flex-col ml-2 p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 md:mt-0">
-                      <h3 class="font-extrabold mb-2">Subjective Fever (felt feverish)</h3>
-                      <div class="text-left mb-6">
-                        <input type="radio" id="yes" name="gender" value="yes">
-                        <label for="yes" class="radio-label">Yes</label><br>
-                        <input type="radio" id="no" name="gender" value="no">
-                        <label for="no" class="radio-label">No</label><br>
-                        <input type="radio" id="unknown" name="gender" value="unknown">
-                        <label for="unknown" class="radio-label">Unknown</label>
-                        
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Subjective Fever <br /> (felt feverish)</h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Shortness of breath <br /> (dyspnea)</h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Difficulty breathing </h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Cough <br/> (new onset or getting worse) </h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Sore throat </h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2">Can you smell and taste food? </h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col  p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 mb-4 md:mt-0">
+                        <h3 class="font-extrabold mb-2"> Rigors <br/> (Chills) </h3>
+                        <div class="text-left mb-6">
+                          <input type="radio" id="yes" name="gender" value="yes">
+                          <label for="yes" class="radio-label">Yes</label><br>
+                          <input type="radio" id="no" name="gender" value="no">
+                          <label for="no" class="radio-label">No</label><br>
+                          <input type="radio" id="unknown" name="gender" value="unknown">
+                          <label for="unknown" class="radio-label">Unknown</label>
+                          <div style="display: block;">
+                            <label for="highest-temp" class="radio-label">Start date</label>
+                            <br/>
+                            <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="07/14/2020" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="ui-tab5">
