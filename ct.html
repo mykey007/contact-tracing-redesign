@@ -116,13 +116,13 @@
                     </button>
                     <button class="inline-flex mb-0 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="flag-outline" class="mr-4"></ion-icon>
-                        Process Status
+                        Process History
                     </button>
                 </div>
                 <div class="flex flex-col ml-2 p-4">
                     <button class="inline-flex mb-6 items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                         <ion-icon name="ribbon-outline" class="mr-4"></ion-icon>
-                        Resolution Status
+                        Resolution History
                     </button>
                 </div>
             </div>
@@ -406,8 +406,40 @@
                     <p>...</p>
                   </div>
                   <div class="ui-tab4">
-                    <h3>Ut enim ad minim veniam</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, <a href="#">a link</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2 class="mb-6">Symptoms</h2>
+                    <div class="flex flex-row">
+                    <div class="flex flex-col ml-2 p-4 border py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">
+                      <h3 class="font-extrabold mb-2">Fever</h3>
+                      <div class="text-left mb-6">
+                        <input type="radio" id="yes" name="gender" value="yes">
+                        <label for="yes" class="radio-label">Yes</label><br>
+                        <input type="radio" id="no" name="gender" value="no">
+                        <label for="no" class="radio-label">No</label><br>
+                        <input type="radio" id="unknown" name="gender" value="unknown">
+                        <label for="unknown" class="radio-label">Unknown</label>
+                        <div style="display: block;">
+                          <label for="highest-temp" class="radio-label">Highest Temperature (F/C)</label>
+                          <br/>
+                          <input id="highest-temp" class="mb-0 bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" type="text" placeholder="100.4f" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col ml-2 p-4 border py-1 px-3 focus:outline-none  rounded text-base mt-4 md:mt-0">
+                      <h3 class="font-extrabold mb-2">Subjective Fever (felt feverish)</h3>
+                      <div class="text-left mb-6">
+                        <input type="radio" id="yes" name="gender" value="yes">
+                        <label for="yes" class="radio-label">Yes</label><br>
+                        <input type="radio" id="no" name="gender" value="no">
+                        <label for="no" class="radio-label">No</label><br>
+                        <input type="radio" id="unknown" name="gender" value="unknown">
+                        <label for="unknown" class="radio-label">Unknown</label>
+                        
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="ui-tab5">
+                    <h2 class="mb-6">investigation</h2>
                   </div>
                 </div>
               </div>
