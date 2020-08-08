@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
     <link rel='stylesheet' href='style.css' />
     <script src="index.js"></script>
     <title>My Case Load - WebCMR</title>
@@ -39,52 +40,129 @@
       <section class="text-gray-700 body-font">
         <div class="container px-5 py-6 mx-auto">
           <h1 class="flex items-center mb-4 mt-4">Overview</h1>
-          <div class="flex flex-wrap -m-4 text-center w-full ">
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">13</h2>
-                <p class="leading-relaxed">Open</p>
+          <div class="flex flex-row">
+            <div class="flex flex-wrap -m-4 sm:w-full text-center w-1/2 ">
+              <div class="p-4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                  </svg>
+                  <h2 class="title-font font-medium text-3xl text-gray-900">13</h2>
+                  <p class="leading-relaxed">Open</p>
+                </div>
               </div>
-            </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                  <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                  <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                </svg> -->
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">27</h2>
-                <p class="leading-relaxed">Under Investigation</p>
+              <div class="p-4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                  <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                  </svg> -->
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                  <h2 class="title-font font-medium text-3xl text-gray-900">27</h2>
+                  <p class="leading-relaxed">Due Today</p>
+                </div>
               </div>
-            </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
-                <p class="leading-relaxed">QA Review</p>
+              <div class="p-4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                  <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                  </svg> -->
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                  <h2 class="title-font font-medium text-3xl text-gray-900">27</h2>
+                  <p class="leading-relaxed">Under Investigation</p>
+                </div>
               </div>
-            </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <div class="p-4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+                  <p class="leading-relaxed">QA Review</p>
+                </div>
+              </div>
+              <div class="p-4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
 
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                </svg>
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-blue-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                  </svg>
 
-                <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
-                <p class="leading-relaxed">Closed</p>
+                  <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+                  <p class="leading-relaxed">Closed</p>
+                </div>
               </div>
+            </div>
+            <div class="max-w-xs p-4 pt-0 sm:w-full w-1/2">
+              <!-- <div class="px-4 py-2 text-left block text-gray-700 text-sm font-bold mb-8 bg-gray-100 rounded">
+                <p>Logged in as: <a href="#">Henson, Frank</a> </p>
+                <p>Domain: Main</p>
+              </div> -->
+              <form class="bg-white border rounded px-8 pt-6 pb-8 mb-4">
+                <legend class="text-xl mb-2">Search</legend>
+              <div class="mb-4">
+                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="datepicker-input">
+                    View Begin Date: 
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="datepicker-input" type="text" placeholder="07/08/2020" aria-label="Date-Time">
+                  
+              </div>
+              <div id="wrapper" style="margin-top: -1px;"></div>
+              <div class="mb-6">
+                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="password">
+                    Status:
+                  </label>
+                    <div class="relative">
+                      <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                        <option>Select a Status</option>
+                        <option>Clearance Testing</option>
+                        <option>Closed</option>
+                        <option>Open</option>
+                        <option>QA Review</option>
+                        <option>Ready to Close</option>
+                        <option>Under Investigation</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                </div>
+                <div class="text-left mb-4">
+                  <input type="radio" id="name" name="gender" value="Name/OB#/GE#">
+                  <label for="name" class="radio-label">Name/OB#/GE#</label><br>
+                  <input type="radio" id="disease" name="gender" value="disease">
+                  <label for="disease" class="radio-label">Disease/GE Type</label><br>
+                  <input type="radio" id="task" name="gender" value="task">
+                  <label for="task" class="radio-label">Task Name</label>
+                </div>
+                <div class="mb-6">
+                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="textSearch">
+                    Enter name, disease or task: 
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="textSearch" type="text" placeholder="Name">
+                  
+              </div>
+              <div class="flex items-center justify-between">
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                  Search
+                  </button>
+                  <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    Cancel
+                  </button>
+                  
+              </div>
+              </form>
+              <!-- <p class="text-center text-gray-500 text-xs">&copy;2020 Acme Corp. All rights reserved.</p> -->
             </div>
           </div>
+          
         </div>
       </section>
 
@@ -92,16 +170,18 @@
         <div class="container px-5 py-0 mx-auto">
           <h1 class="flex items-center mb-4">My Case Load</h1>
           <div class="flex flex-row text-center w-full mb-4">
-            <table class="table-auto table-auto border-2 rounded-lg px-8 pt-6 pb-8 mb-4 mr-4 p-4 md:w-3/4 sm:w-1/2 w-full">
+            <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+              <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                <table class="divide-y divide-gray-200 table">
               <thead>
                 <tr class="">
                   <th class="px-4 py-2 text-left">ID</th>
                   <!-- <th class="px-4 py-2 text-left">Type</th> -->
-                  <th class="px-4 py-2 text-left">Name</th>
-                  <th class="px-4 py-2 text-left">Disease</th>
-                  <th class="px-4 py-2 text-left">Status</th>
-                  <th class="px-4 py-2 text-right">Date Created</th>
-                  <th class="px-4 py-2 text-right">Date of Onset</th>
+                  <th class="px-4 py-2 text-left tracking-wider">Name</th>
+                  <th class="px-4 py-2 text-left tracking-wider">Disease</th>
+                  <th class="px-4 py-2 text-left tracking-wider">Status</th>
+                  <th class="px-4 py-2 text-right tracking-wider">Date Created</th>
+                  <th class="px-4 py-2 text-right tracking-wider">Date of Onset</th>
                 </tr>
               </thead>
               <tbody>
@@ -218,71 +298,13 @@
                 </tfoot>
               </tbody>
               
-            </table>
+                </table>
+              </div>
+            </div>
 
 
 
-            <div class="w-full max-w-xs p-4 pt-0 md:w-1/4 sm:w-1/2 w-full">
-              <div class="px-4 py-2 text-left block text-gray-700 text-sm font-bold mb-8 bg-gray-100 rounded">
-                <p>Logged in as: <a href="#">Henson, Frank</a> </p>
-                <p>Domain: Main</p>
-              </div>
-              <form class="bg-white border rounded px-8 pt-6 pb-8 mb-4">
-                <legend class="text-xl mb-2">Search</legend>
-              <div class="mb-4">
-                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="datepicker-input">
-                    View Begin Date: 
-                  </label>
-                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="datepicker-input" type="text" placeholder="07/08/2020" aria-label="Date-Time">
-                  
-              </div>
-              <div id="wrapper" style="margin-top: -1px;"></div>
-              <div class="mb-6">
-                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="password">
-                    Status:
-                  </label>
-                    <div class="relative">
-                      <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                        <option>Select a Status</option>
-                        <option>Clearance Testing</option>
-                        <option>Closed</option>
-                        <option>Open</option>
-                        <option>QA Review</option>
-                        <option>Ready to Close</option>
-                        <option>Under Investigation</option>
-                      </select>
-                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                      </div>
-                    </div>
-                </div>
-                <div class="text-left mb-4">
-                  <input type="radio" id="name" name="gender" value="Name/OB#/GE#">
-                  <label for="name" class="radio-label">Name/OB#/GE#</label><br>
-                  <input type="radio" id="disease" name="gender" value="disease">
-                  <label for="disease" class="radio-label">Disease/GE Type</label><br>
-                  <input type="radio" id="task" name="gender" value="task">
-                  <label for="task" class="radio-label">Task Name</label>
-                </div>
-                <div class="mb-6">
-                  <label class="text-left block text-gray-700 text-sm font-bold mb-2" for="datepicker-input">
-                    Enter name, disease or task: 
-                  </label>
-                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name">
-                  
-              </div>
-              <div class="flex items-center justify-between">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                  Search
-                  </button>
-                  <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                    Cancel
-                  </button>
-                  
-              </div>
-              </form>
-              <!-- <p class="text-center text-gray-500 text-xs">&copy;2020 Acme Corp. All rights reserved.</p> -->
-          </div>
+            
 
 
 

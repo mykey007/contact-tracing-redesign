@@ -62,8 +62,9 @@ tr.no-hover td{
     background: #fff;
 }
 
-table {
-    max-width: 900px
+.table {
+    table-layout: fixed;
+    width: 100%;
 }
 
 
